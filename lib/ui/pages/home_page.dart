@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:news_app/app_styles.dart';
 import 'package:news_app/size_config.dart';
 import 'package:news_app/ui/widgets/home_card_item.dart';
+import 'package:news_app/ui/widgets/short_home_item.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -184,6 +185,39 @@ class HomeScreen extends StatelessWidget {
                   date: 'Sep 9, 2022',
                   onTap: () {},
                 ),
+                HomeCardItem(
+                  svgUrl:
+                      'https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=936&q=80',
+                  title:
+                      'Bangka Belitung - Uniqure, unmatched. There is no other place like Bangka Belitung in this world',
+                  profileUrl:
+                      'https://yt3.ggpht.com/ytc/AMLnZu9GWPDgFIuyiNkYmhG52h3ZkXYgwYy8Hi89ipKvYg=s900-c-k-c0x00ffffff-no-rj',
+                  name: 'Novri Amsyah',
+                  date: 'Sep 9, 2022',
+                  onTap: () {},
+                ),
+                HomeCardItem(
+                  svgUrl:
+                      'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+                  title:
+                      'Bangka Belitung - Uniqure, unmatched. There is no other place like Bangka Belitung in this world',
+                  profileUrl:
+                      'https://yt3.ggpht.com/ytc/AMLnZu9GWPDgFIuyiNkYmhG52h3ZkXYgwYy8Hi89ipKvYg=s900-c-k-c0x00ffffff-no-rj',
+                  name: 'Novri Amsyah',
+                  date: 'Sep 9, 2022',
+                  onTap: () {},
+                ),
+                HomeCardItem(
+                  svgUrl:
+                      'https://images.unsplash.com/photo-1573548842355-73bb50e50323?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+                  title:
+                      'Bangka Belitung - Uniqure, unmatched. There is no other place like Bangka Belitung in this world',
+                  profileUrl:
+                      'https://yt3.ggpht.com/ytc/AMLnZu9GWPDgFIuyiNkYmhG52h3ZkXYgwYy8Hi89ipKvYg=s900-c-k-c0x00ffffff-no-rj',
+                  name: 'Novri Amsyah',
+                  date: 'Sep 9, 2022',
+                  onTap: () {},
+                ),
               ],
             ),
           ),
@@ -213,84 +247,30 @@ class HomeScreen extends StatelessWidget {
           ),
           SizedBox(
             height: 88,
-            child: ListView.builder(
+            child: ListView(
               scrollDirection: Axis.horizontal,
-              itemCount: 10,
-              itemBuilder: (context, index) {
-                return Container(
-                  padding: const EdgeInsets.all(9),
-                  margin: const EdgeInsets.only(right: 20),
-                  height: 88,
-                  width: 208,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(kBorderRadius),
-                    color: kWhite,
-                    boxShadow: [
-                      BoxShadow(
-                        color: kDarkBlue.withOpacity(0.051),
-                        offset: const Offset(0.0, 0.3),
-                        blurRadius: 24.0,
-                        spreadRadius: 0.0,
-                      ),
-                    ],
-                  ),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 70,
-                        height: 70,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(kBorderRadius),
-                          image: const DecorationImage(
-                              fit: BoxFit.cover,
-                              image: AssetImage('assets/item_play2.png')),
-                        ),
-                        child: Align(
-                          alignment: Alignment.center,
-                          child: SvgPicture.asset(
-                            'assets/play_icon.svg',
-                            width: 19,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 12,
-                      ),
-                      Flexible(
-                        child: Column(
-                          children: [
-                            Text(
-                              'Top Trending\nIslands in 2022',
-                              style: kPoppinsSemiBold.copyWith(
-                                fontSize: SizeConfig.blockSizeHorizontal! * 3.5,
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 7,
-                            ),
-                            Row(
-                              children: [
-                                SvgPicture.asset('assets/eye_icon.svg'),
-                                const SizedBox(
-                                  width: 4,
-                                ),
-                                Text(
-                                  '40,999',
-                                  style: kPoppinsMedium.copyWith(
-                                    fontSize:
-                                        SizeConfig.blockSizeHorizontal! * 3,
-                                    color: kgrey,
-                                  ),
-                                )
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                );
-              },
+              children: const [
+                ShortHomeItem(
+                  imageUrl:
+                      'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+                  title: 'Top Trending\nIslands in 2022',
+                ),
+                ShortHomeItem(
+                  imageUrl:
+                      'http://backpackerjakarta.com/wp-content/uploads/2017/11/Pantai-Pagoda-Vihara-Puri-Tri-Agung-bangka.jpg',
+                  title: 'Top Trending\nIslands in 2022',
+                ),
+                ShortHomeItem(
+                  imageUrl:
+                      'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+                  title: 'Top Trending\nIslands in 2022',
+                ),
+                ShortHomeItem(
+                  imageUrl:
+                      'https://images.unsplash.com/photo-1573548842355-73bb50e50323?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+                  title: 'Top Trending\nIslands in 2022',
+                ),
+              ],
             ),
           ),
         ],

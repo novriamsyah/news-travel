@@ -1,16 +1,31 @@
-# news_app
+# News Travel
 
-A new Flutter project.
+Belajar slicing aplikasi mobile news travel
 
-## Getting Started
+## Demo Bank Sha
 
-This project is a starting point for a Flutter application.
+https://youtube.com/shorts/PZ-Ic2jr9YE?feature=share
 
-A few resources to get you started if this is your first Flutter project:
+## Tampilan Bank Sha
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<table>
+   <tr>
+      <td>
+      <img style="-webkit-user-select: none;margin: auto;cursor: zoom-in;" src="https://user-images.githubusercontent.com/52773931/226530501-4fdf10c5-7303-43d0-a00c-0364e47ea1fe.png" width="210" height="410">
+      </td>
+      <td>
+      <img style="-webkit-user-select: none;margin: auto;cursor: zoom-in;" src="https://user-images.githubusercontent.com/52773931/226530582-16c1a1be-0345-4a5a-aa60-e681323352d5.png" width="210" height="410">
+      </td>
+    </tr>
+</table>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation
+
+Install Bank Sha
+
+```bash
+    clone this project
+    flutter pub get
+    flutter run
+
+```
